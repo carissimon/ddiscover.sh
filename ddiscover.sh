@@ -1,5 +1,5 @@
 #!/bin/bash
-# Para usar, leia o README.txt
+# Para usar, leia o README.md
 i=0 # Variável de Contador
 while read linha; do # Lê o arquivo de wordlist linha por linha
    resposta=$(curl -s -o /dev/null -w "%{http_code}" $1/$linha/) # Captura o valor da resposta HTTP da página 

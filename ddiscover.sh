@@ -1,9 +1,5 @@
 #!/bin/bash
-## Enumerador de Páginas WEB ##
-## AUTOR: NICOLAS CARISSIMO ##
-## Versão 1.0 #
-## Modo de uso::: root@host:~# ./discover http(s)://<ip ou DNS> <wordlist> ##
-
+# Para usar, leia o README.txt
 i=0 # Variável de Contador
 while read linha; do # Lê o arquivo de wordlist linha por linha
    resposta=$(curl -s -o /dev/null -w "%{http_code}" $1/$linha/) # Captura o valor da resposta HTTP da página 
